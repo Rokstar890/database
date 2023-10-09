@@ -397,8 +397,8 @@ async def get_shortlink(link):
                     return data['shortlink']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'http://Mdiskshortner.link/directLink?token={URL_SHORTNER_WEBSITE_API}&link={link}'
+                    return f'http://Mdiskshortner.link/directLink?token=00b0eacdca74780666d78f22ec43440e43994c2b{URL_SHORTNER_WEBSITE_API}&link={link}'
 
     except Exception as e:
         logger.error(e)
-        return f'http://Mdiskshortner.link/directLink?token={URL_SHORTNER_WEBSITE_API}&link={link}'
+        return f'http://Mdiskshortner.link/directLink?token=00b0eacdca74780666d78f22ec43440e43994c2b{URL_SHORTNER_WEBSITE_API}&link={link}'
